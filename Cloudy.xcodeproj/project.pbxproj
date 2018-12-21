@@ -7,8 +7,17 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7BE9B18DD417A56D9424A2F2 /* WeatherEntity.m in Sources */ = {isa = PBXBuildFile; fileRef = 7BE9B2AC876E249AB39BC58C /* WeatherEntity.m */; };
+		7BE9B1A957540B56130690C2 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7BE9B0510AB545FF1AA23DE0 /* ViewController.m */; };
+		7BE9B2E67E3235C9E157F5F5 /* WeatherLocalDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 7BE9BE8F3EA3A7838BF2C41B /* WeatherLocalDataSource.m */; };
+		7BE9B89F872F2BC2F7567F12 /* LocationEntity.m in Sources */ = {isa = PBXBuildFile; fileRef = 7BE9BF4471812D6A9588ACDD /* LocationEntity.m */; };
+		7BE9BC6821AE03E45A0F6024 /* LocationLocalDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 7BE9B053F049377DFA81ABA0 /* LocationLocalDataSource.m */; };
+		7BE9BCA883E8FECE71D99611 /* Location.m in Sources */ = {isa = PBXBuildFile; fileRef = 7BE9BF96F86C3FA5F6C68764 /* Location.m */; };
+		7BE9BFBDFCA7D6A98D70814E /* WeatherRemoteDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 7BE9BBD8C42711E2621977D1 /* WeatherRemoteDataSource.m */; };
+		7BE9BFDB746E9556DD3F9DC7 /* WeatherRepository.m in Sources */ = {isa = PBXBuildFile; fileRef = 7BE9B2CA95989FA6BDBB4E82 /* WeatherRepository.m */; };
+		8A4419493BEC35232B5B7ECF /* libPods-Cloudy.a in Frameworks */ = {isa = PBXBuildFile; fileRef = FF7EC75E0708081DFCC5D4D5 /* libPods-Cloudy.a */; };
+		FBB04FD721CD1E1D0042FFF0 /* Weather.m in Sources */ = {isa = PBXBuildFile; fileRef = FBB04FD621CD1E1D0042FFF0 /* Weather.m */; };
 		FBE4ED3121CB94F70046C211 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FBE4ED3021CB94F70046C211 /* AppDelegate.m */; };
-		FBE4ED3421CB94F70046C211 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FBE4ED3321CB94F70046C211 /* ViewController.m */; };
 		FBE4ED3721CB94F70046C211 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FBE4ED3521CB94F70046C211 /* Main.storyboard */; };
 		FBE4ED3A21CB94F70046C211 /* Cloudy.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = FBE4ED3821CB94F70046C211 /* Cloudy.xcdatamodeld */; };
 		FBE4ED3C21CB94F70046C211 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FBE4ED3B21CB94F70046C211 /* Assets.xcassets */; };
@@ -17,17 +26,38 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		43AA3829A67C5DB5C8146491 /* Pods-Cloudy.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Cloudy.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Cloudy/Pods-Cloudy.debug.xcconfig"; sourceTree = "<group>"; };
+		7BE9B04B24DA1E7B8BDAE1D7 /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		7BE9B0510AB545FF1AA23DE0 /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		7BE9B053F049377DFA81ABA0 /* LocationLocalDataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LocationLocalDataSource.m; sourceTree = "<group>"; };
+		7BE9B17DC50FE1F6942DAB77 /* Location.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Location.h; sourceTree = "<group>"; };
+		7BE9B2AC876E249AB39BC58C /* WeatherEntity.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WeatherEntity.m; sourceTree = "<group>"; };
+		7BE9B2CA95989FA6BDBB4E82 /* WeatherRepository.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WeatherRepository.m; sourceTree = "<group>"; };
+		7BE9B62548A28C12A922B547 /* LocationLocalDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LocationLocalDataSource.h; sourceTree = "<group>"; };
+		7BE9B762C55E41C1E673FE67 /* LocationEntity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LocationEntity.h; sourceTree = "<group>"; };
+		7BE9B7D0D2B4B4ECB14DB24B /* WeatherRemoteDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WeatherRemoteDataSource.h; sourceTree = "<group>"; };
+		7BE9B7E8FC9C1AD1E94E4C05 /* WeatherDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WeatherDataSource.h; sourceTree = "<group>"; };
+		7BE9B9091654BE650221E639 /* WeatherEntity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WeatherEntity.h; sourceTree = "<group>"; };
+		7BE9BB85529E47D3D90E4C59 /* WeatherRepository.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WeatherRepository.h; sourceTree = "<group>"; };
+		7BE9BBB65468A6A4FCBB86B6 /* LocationDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LocationDataSource.h; sourceTree = "<group>"; };
+		7BE9BBD8C42711E2621977D1 /* WeatherRemoteDataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WeatherRemoteDataSource.m; sourceTree = "<group>"; };
+		7BE9BE63F17812FB0F9F08ED /* WeatherLocalDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WeatherLocalDataSource.h; sourceTree = "<group>"; };
+		7BE9BE8F3EA3A7838BF2C41B /* WeatherLocalDataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WeatherLocalDataSource.m; sourceTree = "<group>"; };
+		7BE9BF4471812D6A9588ACDD /* LocationEntity.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LocationEntity.m; sourceTree = "<group>"; };
+		7BE9BF96F86C3FA5F6C68764 /* Location.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Location.m; sourceTree = "<group>"; };
+		E40967DB1CF050E059420712 /* Pods-Cloudy.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Cloudy.release.xcconfig"; path = "Pods/Target Support Files/Pods-Cloudy/Pods-Cloudy.release.xcconfig"; sourceTree = "<group>"; };
+		FBB04FD521CD1E1D0042FFF0 /* Weather.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Weather.h; sourceTree = "<group>"; };
+		FBB04FD621CD1E1D0042FFF0 /* Weather.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Weather.m; sourceTree = "<group>"; };
 		FBE4ED2C21CB94F70046C211 /* Cloudy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Cloudy.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FBE4ED2F21CB94F70046C211 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		FBE4ED3021CB94F70046C211 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		FBE4ED3221CB94F70046C211 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		FBE4ED3321CB94F70046C211 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		FBE4ED3621CB94F70046C211 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		FBE4ED3921CB94F70046C211 /* Cloudy.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Cloudy.xcdatamodel; sourceTree = "<group>"; };
 		FBE4ED3B21CB94F70046C211 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FBE4ED3E21CB94F70046C211 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FBE4ED4021CB94F70046C211 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FBE4ED4121CB94F70046C211 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		FF7EC75E0708081DFCC5D4D5 /* libPods-Cloudy.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Cloudy.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -35,17 +65,110 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8A4419493BEC35232B5B7ECF /* libPods-Cloudy.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		363C4BFD974171EEA71C8330 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				43AA3829A67C5DB5C8146491 /* Pods-Cloudy.debug.xcconfig */,
+				E40967DB1CF050E059420712 /* Pods-Cloudy.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		7BE9B4EE801B11C349894749 /* data */ = {
+			isa = PBXGroup;
+			children = (
+				7BE9BD12EEEADA820B8DB83F /* model */,
+				7BE9B2CA95989FA6BDBB4E82 /* WeatherRepository.m */,
+				7BE9BB85529E47D3D90E4C59 /* WeatherRepository.h */,
+				7BE9BF0757285E4EA1EE75F2 /* source */,
+				7BE9B7E8FC9C1AD1E94E4C05 /* WeatherDataSource.h */,
+				7BE9BBB65468A6A4FCBB86B6 /* LocationDataSource.h */,
+			);
+			path = data;
+			sourceTree = "<group>";
+		};
+		7BE9B7CEC92B8BD569853573 /* remote */ = {
+			isa = PBXGroup;
+			children = (
+				7BE9BBD8C42711E2621977D1 /* WeatherRemoteDataSource.m */,
+				7BE9B7D0D2B4B4ECB14DB24B /* WeatherRemoteDataSource.h */,
+			);
+			path = remote;
+			sourceTree = "<group>";
+		};
+		7BE9B887519C90E86ED04393 /* presentation */ = {
+			isa = PBXGroup;
+			children = (
+				7BE9B04B24DA1E7B8BDAE1D7 /* ViewController.h */,
+				7BE9B0510AB545FF1AA23DE0 /* ViewController.m */,
+			);
+			path = presentation;
+			sourceTree = "<group>";
+		};
+		7BE9BD12EEEADA820B8DB83F /* model */ = {
+			isa = PBXGroup;
+			children = (
+				7BE9BF4471812D6A9588ACDD /* LocationEntity.m */,
+				7BE9B9091654BE650221E639 /* WeatherEntity.h */,
+				7BE9B2AC876E249AB39BC58C /* WeatherEntity.m */,
+				7BE9B762C55E41C1E673FE67 /* LocationEntity.h */,
+			);
+			path = model;
+			sourceTree = "<group>";
+		};
+		7BE9BF0757285E4EA1EE75F2 /* source */ = {
+			isa = PBXGroup;
+			children = (
+				7BE9B7CEC92B8BD569853573 /* remote */,
+				7BE9BF40CC93FE4E16EC8257 /* local */,
+			);
+			path = source;
+			sourceTree = "<group>";
+		};
+		7BE9BF40CC93FE4E16EC8257 /* local */ = {
+			isa = PBXGroup;
+			children = (
+				7BE9BE8F3EA3A7838BF2C41B /* WeatherLocalDataSource.m */,
+				7BE9BE63F17812FB0F9F08ED /* WeatherLocalDataSource.h */,
+				7BE9B053F049377DFA81ABA0 /* LocationLocalDataSource.m */,
+				7BE9B62548A28C12A922B547 /* LocationLocalDataSource.h */,
+			);
+			path = local;
+			sourceTree = "<group>";
+		};
+		EE4AEF3B6ABB0E14C6CE9BAD /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				FF7EC75E0708081DFCC5D4D5 /* libPods-Cloudy.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		FBB04FD121CD1DBF0042FFF0 /* domain */ = {
+			isa = PBXGroup;
+			children = (
+				FBB04FD521CD1E1D0042FFF0 /* Weather.h */,
+				FBB04FD621CD1E1D0042FFF0 /* Weather.m */,
+				7BE9B17DC50FE1F6942DAB77 /* Location.h */,
+				7BE9BF96F86C3FA5F6C68764 /* Location.m */,
+			);
+			path = domain;
+			sourceTree = "<group>";
+		};
 		FBE4ED2321CB94F70046C211 = {
 			isa = PBXGroup;
 			children = (
 				FBE4ED2E21CB94F70046C211 /* Cloudy */,
 				FBE4ED2D21CB94F70046C211 /* Products */,
+				363C4BFD974171EEA71C8330 /* Pods */,
+				EE4AEF3B6ABB0E14C6CE9BAD /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -60,10 +183,11 @@
 		FBE4ED2E21CB94F70046C211 /* Cloudy */ = {
 			isa = PBXGroup;
 			children = (
+				FBB04FD121CD1DBF0042FFF0 /* domain */,
+				7BE9B4EE801B11C349894749 /* data */,
+				7BE9B887519C90E86ED04393 /* presentation */,
 				FBE4ED2F21CB94F70046C211 /* AppDelegate.h */,
 				FBE4ED3021CB94F70046C211 /* AppDelegate.m */,
-				FBE4ED3221CB94F70046C211 /* ViewController.h */,
-				FBE4ED3321CB94F70046C211 /* ViewController.m */,
 				FBE4ED3521CB94F70046C211 /* Main.storyboard */,
 				FBE4ED3B21CB94F70046C211 /* Assets.xcassets */,
 				FBE4ED3D21CB94F70046C211 /* LaunchScreen.storyboard */,
@@ -81,6 +205,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = FBE4ED4521CB94F70046C211 /* Build configuration list for PBXNativeTarget "Cloudy" */;
 			buildPhases = (
+				58F05650CA9FE4433611CC2B /* [CP] Check Pods Manifest.lock */,
 				FBE4ED2821CB94F70046C211 /* Sources */,
 				FBE4ED2921CB94F70046C211 /* Frameworks */,
 				FBE4ED2A21CB94F70046C211 /* Resources */,
@@ -139,15 +264,48 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		58F05650CA9FE4433611CC2B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Cloudy-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		FBE4ED2821CB94F70046C211 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FBE4ED3421CB94F70046C211 /* ViewController.m in Sources */,
+				FBB04FD721CD1E1D0042FFF0 /* Weather.m in Sources */,
 				FBE4ED3A21CB94F70046C211 /* Cloudy.xcdatamodeld in Sources */,
 				FBE4ED4221CB94F70046C211 /* main.m in Sources */,
 				FBE4ED3121CB94F70046C211 /* AppDelegate.m in Sources */,
+				7BE9B1A957540B56130690C2 /* ViewController.m in Sources */,
+				7BE9BCA883E8FECE71D99611 /* Location.m in Sources */,
+				7BE9B89F872F2BC2F7567F12 /* LocationEntity.m in Sources */,
+				7BE9B18DD417A56D9424A2F2 /* WeatherEntity.m in Sources */,
+				7BE9BFDB746E9556DD3F9DC7 /* WeatherRepository.m in Sources */,
+				7BE9B2E67E3235C9E157F5F5 /* WeatherLocalDataSource.m in Sources */,
+				7BE9BFBDFCA7D6A98D70814E /* WeatherRemoteDataSource.m in Sources */,
+				7BE9BC6821AE03E45A0F6024 /* LocationLocalDataSource.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -287,6 +445,7 @@
 		};
 		FBE4ED4621CB94F70046C211 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 43AA3829A67C5DB5C8146491 /* Pods-Cloudy.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -303,6 +462,7 @@
 		};
 		FBE4ED4721CB94F70046C211 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E40967DB1CF050E059420712 /* Pods-Cloudy.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;

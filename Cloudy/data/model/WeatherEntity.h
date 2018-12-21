@@ -1,0 +1,19 @@
+#import <Foundation/Foundation.h>
+#import <SharkORM/SharkORM.h>
+
+NS_ASSUME_NONNULL_BEGIN
+
+@interface WeatherEntity : SRKObject
+
+@property double latitude;
+@property double longitude;
+@property double temperature;
+@property int pressure;
+@property int humidity;
+@property double wind;
+@property double summary;
+@property NSString *lastUpdate;
+
+@end
+
+NS_ASSUME_NONNULL_END
