@@ -24,5 +24,16 @@
     return self;
 }
 
+- (instancetype)initWithLatitude:(double)latitude longitude:(double)longitude {
+    self = [super init];
+    if (self) {
+        _latitude = latitude;
+        _longitude = longitude;
+        _name = @"Unknown";
+    }
+
+    return self;
+}
+
 
 @end

@@ -11,7 +11,8 @@ NS_ASSUME_NONNULL_BEGIN
 @property int pressure;
 @property int humidity;
 @property double wind;
-@property double summary;
+@property NSString *summary;
+@property NSString *icon;
 @property NSString *lastUpdate;
 
 @end

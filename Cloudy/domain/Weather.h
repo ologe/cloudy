@@ -11,15 +11,18 @@ NS_ASSUME_NONNULL_BEGIN
 @property(readonly) int pressure;
 @property(readonly) int humidity;
 @property(readonly) double wind;
-@property(readonly) double summary;
+@property(readonly) NSString *summary;
+@property(readonly) NSString *icon;
 
 - (instancetype)initWithLocation:(Location *)location
                      temperature:(double)temperature
                         pressure:(int)pressure
                         humidity:(int)humidity
                             wind:(double)wind
-                         summary:(double)summary;
+                         summary:(NSString *)summary
+                            icon:(NSString *) icon;
 
+- (instancetype)initFromBytes:(NSData *)data;
 
 @end
 

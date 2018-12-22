@@ -12,6 +12,8 @@ NS_ASSUME_NONNULL_BEGIN
                        longitude:(double)longitude
                             name:(NSString *)name;
 
+- (instancetype)initWithLatitude:(double)latitude longitude:(double)longitude;
+
 
 @end
 

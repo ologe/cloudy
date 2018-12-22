@@ -47,7 +47,7 @@
     Weather *weather = [_weatherLocal getWeatherForLocation:location];
     if (weather == nil || forced) {
         weather = [_weatherRemote getWeatherForLocation:location];
-        [_weatherLocal cacheWeather:weather];
+        BOOL added = [_weatherLocal cacheWeather:weather];
     }
 
     return weather;

@@ -10,17 +10,19 @@
 		7BE9B18DD417A56D9424A2F2 /* WeatherEntity.m in Sources */ = {isa = PBXBuildFile; fileRef = 7BE9B2AC876E249AB39BC58C /* WeatherEntity.m */; };
 		7BE9B1A957540B56130690C2 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7BE9B0510AB545FF1AA23DE0 /* ViewController.m */; };
 		7BE9B2E67E3235C9E157F5F5 /* WeatherLocalDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 7BE9BE8F3EA3A7838BF2C41B /* WeatherLocalDataSource.m */; };
+		7BE9B45FC06DD72527B13E26 /* ImageHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 7BE9BE90548E45EE5528480A /* ImageHelper.m */; };
 		7BE9B89F872F2BC2F7567F12 /* LocationEntity.m in Sources */ = {isa = PBXBuildFile; fileRef = 7BE9BF4471812D6A9588ACDD /* LocationEntity.m */; };
 		7BE9BC6821AE03E45A0F6024 /* LocationLocalDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 7BE9B053F049377DFA81ABA0 /* LocationLocalDataSource.m */; };
 		7BE9BCA883E8FECE71D99611 /* Location.m in Sources */ = {isa = PBXBuildFile; fileRef = 7BE9BF96F86C3FA5F6C68764 /* Location.m */; };
 		7BE9BFBDFCA7D6A98D70814E /* WeatherRemoteDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 7BE9BBD8C42711E2621977D1 /* WeatherRemoteDataSource.m */; };
+		7BE9BFD7CED3B5F5A24E4690 /* HTTPResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 7BE9B4758E9B25248273DF6C /* HTTPResponse.m */; };
 		7BE9BFDB746E9556DD3F9DC7 /* WeatherRepository.m in Sources */ = {isa = PBXBuildFile; fileRef = 7BE9B2CA95989FA6BDBB4E82 /* WeatherRepository.m */; };
 		8A4419493BEC35232B5B7ECF /* libPods-Cloudy.a in Frameworks */ = {isa = PBXBuildFile; fileRef = FF7EC75E0708081DFCC5D4D5 /* libPods-Cloudy.a */; };
 		FBB04FD721CD1E1D0042FFF0 /* Weather.m in Sources */ = {isa = PBXBuildFile; fileRef = FBB04FD621CD1E1D0042FFF0 /* Weather.m */; };
+		FBB04FDB21CD90520042FFF0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FBB04FDA21CD90520042FFF0 /* Assets.xcassets */; };
 		FBE4ED3121CB94F70046C211 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FBE4ED3021CB94F70046C211 /* AppDelegate.m */; };
 		FBE4ED3721CB94F70046C211 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FBE4ED3521CB94F70046C211 /* Main.storyboard */; };
 		FBE4ED3A21CB94F70046C211 /* Cloudy.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = FBE4ED3821CB94F70046C211 /* Cloudy.xcdatamodeld */; };
-		FBE4ED3C21CB94F70046C211 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FBE4ED3B21CB94F70046C211 /* Assets.xcassets */; };
 		FBE4ED3F21CB94F70046C211 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FBE4ED3D21CB94F70046C211 /* LaunchScreen.storyboard */; };
 		FBE4ED4221CB94F70046C211 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FBE4ED4121CB94F70046C211 /* main.m */; };
 /* End PBXBuildFile section */
@@ -33,6 +35,9 @@
 		7BE9B17DC50FE1F6942DAB77 /* Location.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Location.h; sourceTree = "<group>"; };
 		7BE9B2AC876E249AB39BC58C /* WeatherEntity.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WeatherEntity.m; sourceTree = "<group>"; };
 		7BE9B2CA95989FA6BDBB4E82 /* WeatherRepository.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WeatherRepository.m; sourceTree = "<group>"; };
+		7BE9B4758E9B25248273DF6C /* HTTPResponse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HTTPResponse.m; sourceTree = "<group>"; };
+		7BE9B47E722A6F61B887E32C /* HTTPResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HTTPResponse.h; sourceTree = "<group>"; };
+		7BE9B4A179D79BE796EAA722 /* ImageHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImageHelper.h; sourceTree = "<group>"; };
 		7BE9B62548A28C12A922B547 /* LocationLocalDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LocationLocalDataSource.h; sourceTree = "<group>"; };
 		7BE9B762C55E41C1E673FE67 /* LocationEntity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LocationEntity.h; sourceTree = "<group>"; };
 		7BE9B7D0D2B4B4ECB14DB24B /* WeatherRemoteDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WeatherRemoteDataSource.h; sourceTree = "<group>"; };
@@ -43,17 +48,18 @@
 		7BE9BBD8C42711E2621977D1 /* WeatherRemoteDataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WeatherRemoteDataSource.m; sourceTree = "<group>"; };
 		7BE9BE63F17812FB0F9F08ED /* WeatherLocalDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WeatherLocalDataSource.h; sourceTree = "<group>"; };
 		7BE9BE8F3EA3A7838BF2C41B /* WeatherLocalDataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WeatherLocalDataSource.m; sourceTree = "<group>"; };
+		7BE9BE90548E45EE5528480A /* ImageHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ImageHelper.m; sourceTree = "<group>"; };
 		7BE9BF4471812D6A9588ACDD /* LocationEntity.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LocationEntity.m; sourceTree = "<group>"; };
 		7BE9BF96F86C3FA5F6C68764 /* Location.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Location.m; sourceTree = "<group>"; };
 		E40967DB1CF050E059420712 /* Pods-Cloudy.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Cloudy.release.xcconfig"; path = "Pods/Target Support Files/Pods-Cloudy/Pods-Cloudy.release.xcconfig"; sourceTree = "<group>"; };
 		FBB04FD521CD1E1D0042FFF0 /* Weather.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Weather.h; sourceTree = "<group>"; };
 		FBB04FD621CD1E1D0042FFF0 /* Weather.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Weather.m; sourceTree = "<group>"; };
+		FBB04FDA21CD90520042FFF0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FBE4ED2C21CB94F70046C211 /* Cloudy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Cloudy.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FBE4ED2F21CB94F70046C211 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		FBE4ED3021CB94F70046C211 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		FBE4ED3621CB94F70046C211 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		FBE4ED3921CB94F70046C211 /* Cloudy.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Cloudy.xcdatamodel; sourceTree = "<group>"; };
-		FBE4ED3B21CB94F70046C211 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FBE4ED3E21CB94F70046C211 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FBE4ED4021CB94F70046C211 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FBE4ED4121CB94F70046C211 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -99,6 +105,8 @@
 			children = (
 				7BE9BBD8C42711E2621977D1 /* WeatherRemoteDataSource.m */,
 				7BE9B7D0D2B4B4ECB14DB24B /* WeatherRemoteDataSource.h */,
+				7BE9B4758E9B25248273DF6C /* HTTPResponse.m */,
+				7BE9B47E722A6F61B887E32C /* HTTPResponse.h */,
 			);
 			path = remote;
 			sourceTree = "<group>";
@@ -108,6 +116,8 @@
 			children = (
 				7BE9B04B24DA1E7B8BDAE1D7 /* ViewController.h */,
 				7BE9B0510AB545FF1AA23DE0 /* ViewController.m */,
+				7BE9BE90548E45EE5528480A /* ImageHelper.m */,
+				7BE9B4A179D79BE796EAA722 /* ImageHelper.h */,
 			);
 			path = presentation;
 			sourceTree = "<group>";
@@ -189,11 +199,11 @@
 				FBE4ED2F21CB94F70046C211 /* AppDelegate.h */,
 				FBE4ED3021CB94F70046C211 /* AppDelegate.m */,
 				FBE4ED3521CB94F70046C211 /* Main.storyboard */,
-				FBE4ED3B21CB94F70046C211 /* Assets.xcassets */,
 				FBE4ED3D21CB94F70046C211 /* LaunchScreen.storyboard */,
 				FBE4ED4021CB94F70046C211 /* Info.plist */,
 				FBE4ED4121CB94F70046C211 /* main.m */,
 				FBE4ED3821CB94F70046C211 /* Cloudy.xcdatamodeld */,
+				FBB04FDA21CD90520042FFF0 /* Assets.xcassets */,
 			);
 			path = Cloudy;
 			sourceTree = "<group>";
@@ -257,7 +267,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				FBE4ED3F21CB94F70046C211 /* LaunchScreen.storyboard in Resources */,
-				FBE4ED3C21CB94F70046C211 /* Assets.xcassets in Resources */,
+				FBB04FDB21CD90520042FFF0 /* Assets.xcassets in Resources */,
 				FBE4ED3721CB94F70046C211 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -306,6 +316,8 @@
 				7BE9B2E67E3235C9E157F5F5 /* WeatherLocalDataSource.m in Sources */,
 				7BE9BFBDFCA7D6A98D70814E /* WeatherRemoteDataSource.m in Sources */,
 				7BE9BC6821AE03E45A0F6024 /* LocationLocalDataSource.m in Sources */,
+				7BE9BFD7CED3B5F5A24E4690 /* HTTPResponse.m in Sources */,
+				7BE9B45FC06DD72527B13E26 /* ImageHelper.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
