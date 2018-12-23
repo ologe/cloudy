@@ -15,7 +15,8 @@
 @property(weak, nonatomic) IBOutlet UIImageView *image;
 @property (weak, nonatomic) IBOutlet UILabel *temperatureMin;
 @property (weak, nonatomic) IBOutlet UILabel *temperatureMax;
-    
+@property (weak, nonatomic) IBOutlet UIScrollView *scrollView;
+
 
 @end
 

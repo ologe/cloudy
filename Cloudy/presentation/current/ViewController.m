@@ -3,6 +3,7 @@
 @interface ViewController () {
 @private
     WeatherRepository *_repository;
+    UIRefreshControl *_refresher;
 }
 
 @end
@@ -13,13 +14,31 @@
     [super viewDidLoad];
     
     _repository = [WeatherRepository sharedInstance];
+    
+    _refresher = [[UIRefreshControl alloc] init];
+    [_refresher addTarget:self
+                   action:@selector(refreshView:)
+         forControlEvents:UIControlEventValueChanged];
+    
+    [self.scrollView setRefreshControl:_refresher];
+    
+    [self fetchData:false];
+}
 
+-(void)refreshView:(UIRefreshControl *)refresh {
+    [self fetchData:true];
+}
+
+- (void) fetchData:(BOOL) forced{
     dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
         Location *location = [[Location alloc] initWithLatitude:37.39 longitude:-122.09];
-        Weather *weather = [self->_repository getWeatherForLocation:location];
-
+        Weather *weather = [self->_repository getWeatherForLocation:location forced:forced];
+        
         dispatch_async(dispatch_get_main_queue(), ^{
             [self updateUI:weather];
+            if (forced) {
+                [self->_refresher endRefreshing];
+            }
         });
     });
 }

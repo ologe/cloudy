@@ -116,18 +116,18 @@
 			children = (
 				7BE9BE90548E45EE5528480A /* ImageHelper.m */,
 				7BE9B4A179D79BE796EAA722 /* ImageHelper.h */,
-				7BE9B9ABF1B711CEC4B7345A /* detail */,
+				7BE9B9ABF1B711CEC4B7345A /* current */,
 			);
 			path = presentation;
 			sourceTree = "<group>";
 		};
-		7BE9B9ABF1B711CEC4B7345A /* detail */ = {
+		7BE9B9ABF1B711CEC4B7345A /* current */ = {
 			isa = PBXGroup;
 			children = (
 				7BE9B0F63D90DB76534C601B /* ViewController.h */,
 				7BE9BBACAA76C8CE6AB5F846 /* ViewController.m */,
 			);
-			path = detail;
+			path = current;
 			sourceTree = "<group>";
 		};
 		7BE9BD12EEEADA820B8DB83F /* model */ = {

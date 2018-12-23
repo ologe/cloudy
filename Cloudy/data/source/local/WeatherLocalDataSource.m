@@ -23,9 +23,7 @@ static NSDateFormatter *_dateFormatter = nil;
                                                      " WHERE latitude = %f AND longitude = %f "
                                                      " AND lastUpdate BETWEEN date('now', '-%@') and date('now')",
                                                      location.latitude, location.longitude, cacheTime];
-    // TODO table name 'weather_entity' is incorrect
     SRKRawResults *rawResults = [SharkORM rawQuery:sql];
-//    SRKRawResults *rawResults = [SharkORM rawQuery:@"SELECT * from weatherentity"];
     if ([rawResults.rawResults count] == 0) {
         return nil;
     }
