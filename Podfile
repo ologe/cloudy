@@ -7,5 +7,5 @@ target 'Cloudy' do
 
   # Pods for Cloudy
   pod "SharkORM"
-
+  pod "SWRevealViewController"
 end

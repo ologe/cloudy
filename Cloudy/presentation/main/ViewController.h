@@ -3,6 +3,7 @@
 #import "Weather.h"
 #import "WeatherRepository.h"
 #import "ImageHelper.h"
+#import <SWRevealViewController.h>
 
 @interface ViewController : UIViewController
 
@@ -16,6 +17,8 @@
 @property (weak, nonatomic) IBOutlet UILabel *temperatureMin;
 @property (weak, nonatomic) IBOutlet UILabel *temperatureMax;
 @property (weak, nonatomic) IBOutlet UIScrollView *scrollView;
+@property (weak, nonatomic) IBOutlet UIButton *drawer;
+@property (weak, nonatomic) IBOutlet UIButton *add;
 
 
 @end

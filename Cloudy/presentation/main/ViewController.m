@@ -15,14 +15,21 @@
     
     _repository = [WeatherRepository sharedInstance];
     
+    [self.drawer addTarget:self.revealViewController
+                     action:@selector(revealToggle:)
+           forControlEvents:(UIControlEventTouchUpInside)];
+     [self.view addGestureRecognizer:self.revealViewController.panGestureRecognizer];
+    
+    [self setupSwipeToRefresh];
+    [self fetchData:false];
+}
+
+- (void) setupSwipeToRefresh{
     _refresher = [[UIRefreshControl alloc] init];
     [_refresher addTarget:self
                    action:@selector(refreshView:)
          forControlEvents:UIControlEventValueChanged];
-    
     [self.scrollView setRefreshControl:_refresher];
-    
-    [self fetchData:false];
 }
 
 -(void)refreshView:(UIRefreshControl *)refresh {
