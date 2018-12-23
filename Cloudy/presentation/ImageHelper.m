@@ -6,6 +6,7 @@
 
 + (UIImage *)createImage:(NSString *)image {
 //    source https://openweathermap.org/weather-conditions
+    return [UIImage imageNamed:@"cloudy-day"];
     if ([image isEqualToString:@"01d"]) {
         return [UIImage imageNamed:@"clear-day"];
     }
