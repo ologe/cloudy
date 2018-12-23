@@ -2,6 +2,6 @@
 
 @implementation WeatherEntity
 
-@dynamic latitude, longitude, temperature, pressure, humidity, wind, summary, icon, lastUpdate;
+@dynamic latitude, longitude, temperature, pressure, humidity, wind, summary, icon, lastUpdate, temperatureMin, temperatureMax;
 
 @end

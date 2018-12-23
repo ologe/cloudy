@@ -8,6 +8,8 @@ NS_ASSUME_NONNULL_BEGIN
 @property double latitude;
 @property double longitude;
 @property double temperature;
+@property double temperatureMin;
+@property double temperatureMax;
 @property int pressure;
 @property int humidity;
 @property double wind;

@@ -11,7 +11,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-
+    
     _repository = [WeatherRepository sharedInstance];
 
     dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
@@ -28,6 +28,8 @@
     NSString *percentage = @"%";
     self.location.text = [weather.location.name uppercaseString];
     self.temperature.text = [[NSString alloc] initWithFormat:@"%.1f", weather.temperature];
+    self.temperatureMin.text = [[NSString alloc] initWithFormat:@"%.1f°", weather.temperatureMin];
+    self.temperatureMax.text = [[NSString alloc] initWithFormat:@"%.1f°", weather.temperatureMax];
     self.humidity.text = [[NSString alloc] initWithFormat:@"%d%@", weather.humidity, percentage];
     self.pressure.text = [[NSString alloc] initWithFormat:@"%dhPa", weather.pressure];
     self.wind.text = [[NSString alloc] initWithFormat:@"%.1fm/s", weather.wind];

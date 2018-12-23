@@ -13,7 +13,9 @@
 @property(weak, nonatomic) IBOutlet UILabel *wind;
 @property(weak, nonatomic) IBOutlet UILabel *summary;
 @property(weak, nonatomic) IBOutlet UIImageView *image;
-
+@property (weak, nonatomic) IBOutlet UILabel *temperatureMin;
+@property (weak, nonatomic) IBOutlet UILabel *temperatureMax;
+    
 
 @end
 

@@ -60,6 +60,8 @@ static NSDateFormatter *_dateFormatter = nil;
 
     return [[Weather alloc] initWithLocation:location
                                  temperature:[[result valueForColumn:@"temperature" atRow:index] doubleValue]
+                                 temperatureMin:[[result valueForColumn:@"temperatureMin" atRow:index] doubleValue]
+                                 temperatureMax:[[result valueForColumn:@"temperatureMax" atRow:index] doubleValue]
                                     pressure:[[result valueForColumn:@"pressure" atRow:index] intValue]
                                     humidity:[[result valueForColumn:@"humidity" atRow:index] intValue]
                                         wind:[[result valueForColumn:@"wind" atRow:index] doubleValue]
