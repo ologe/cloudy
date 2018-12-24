@@ -10,12 +10,19 @@
 
 @implementation MainViewController
 
-
-
 - (void)viewDidLoad {
     [super viewDidLoad];
 
     _repository = [WeatherRepository sharedInstance];
+    if (self.latitude == nil){
+        NSArray * locations = [_repository getAllLocations];
+        if ([locations count] > 0){
+            Location *defaultLocation = locations[0];
+            self.latitude = @(defaultLocation.latitude);
+            self.longitude = @(defaultLocation.longitude);
+        }
+    }
+
     
     [self.drawer addTarget:self.revealViewController
                      action:@selector(revealToggle:)
@@ -75,13 +82,18 @@
 }
 
 -(void) showAddCoordinatesPopup{
-    UIAlertController *alert = [UIAlertController alertControllerWithTitle:@"New location coordinates"
+    UIAlertController *alert = [UIAlertController alertControllerWithTitle:@"New location"
                                                                    message:nil
                                                             preferredStyle:(UIAlertControllerStyleAlert)];
     [alert addAction:[UIAlertAction actionWithTitle:@"Cancel" style:(UIAlertActionStyleDestructive) handler:nil]];
     [alert addAction:[UIAlertAction actionWithTitle:@"Save" style:(UIAlertActionStyleDefault) handler:^(UIAlertAction * _Nonnull action) {
-        [self saveLatitude:alert.textFields[0].text andLongitude:alert.textFields[1].text];
+        [self saveLocationname:alert.textFields[0].text
+                  withLatitude:alert.textFields[1].text
+                  andLongitude:alert.textFields[2].text];
     }]];
+    [alert addTextFieldWithConfigurationHandler:^(UITextField * _Nonnull textField) {
+        textField.placeholder = @"Name";
+    }];
     [alert addTextFieldWithConfigurationHandler:^(UITextField * _Nonnull textField) {
         textField.placeholder = @"Latitude";
     }];
@@ -92,8 +104,8 @@
     [self presentViewController:alert animated:YES completion:^{}];
 }
 
--(void) saveLatitude:(NSString*)latitude andLongitude:(NSString*)longitude{
-    Location *location = [[Location alloc] initWithLatitude:latitude.doubleValue longitude:longitude.doubleValue];
+-(void) saveLocationname:(NSString*)name withLatitude:(NSString *)latitude andLongitude:(NSString*)longitude{
+    Location *location = [[Location alloc] initWithLatitude:latitude.doubleValue longitude:longitude.doubleValue name:name];
     [_repository addLocation:location];
 
     LocationsViewController *controller = (LocationsViewController*) self.revealViewController.rearViewController;
