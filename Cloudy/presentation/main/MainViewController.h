@@ -4,8 +4,12 @@
 #import "WeatherRepository.h"
 #import "ImageHelper.h"
 #import <SWRevealViewController.h>
+#import "LocationsViewController.h"
 
-@interface ViewController : UIViewController
+@interface MainViewController : UIViewController
+
+@property NSNumber *latitude;
+@property NSNumber *longitude;
 
 @property(weak, nonatomic) IBOutlet UILabel *location;
 @property(weak, nonatomic) IBOutlet UILabel *temperature;

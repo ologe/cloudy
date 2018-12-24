@@ -8,9 +8,11 @@
 
 /* Begin PBXBuildFile section */
 		7BE9B18DD417A56D9424A2F2 /* WeatherEntity.m in Sources */ = {isa = PBXBuildFile; fileRef = 7BE9B2AC876E249AB39BC58C /* WeatherEntity.m */; };
+		7BE9B1F36CEE310C7775E4B1 /* LocationTableCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 7BE9B1B8296BCCC7289FAD81 /* LocationTableCell.m */; };
 		7BE9B2E67E3235C9E157F5F5 /* WeatherLocalDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 7BE9BE8F3EA3A7838BF2C41B /* WeatherLocalDataSource.m */; };
 		7BE9B45FC06DD72527B13E26 /* ImageHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 7BE9BE90548E45EE5528480A /* ImageHelper.m */; };
-		7BE9B5D64B4972DFD7B52A19 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7BE9BBACAA76C8CE6AB5F846 /* ViewController.m */; };
+		7BE9B5D64B4972DFD7B52A19 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7BE9BBACAA76C8CE6AB5F846 /* MainViewController.m */; };
+		7BE9B706C2D3209F70A85B8F /* LocationsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7BE9B97A1CE896389E340E5A /* LocationsViewController.m */; };
 		7BE9B89F872F2BC2F7567F12 /* LocationEntity.m in Sources */ = {isa = PBXBuildFile; fileRef = 7BE9BF4471812D6A9588ACDD /* LocationEntity.m */; };
 		7BE9BC6821AE03E45A0F6024 /* LocationLocalDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 7BE9B053F049377DFA81ABA0 /* LocationLocalDataSource.m */; };
 		7BE9BCA883E8FECE71D99611 /* Location.m in Sources */ = {isa = PBXBuildFile; fileRef = 7BE9BF96F86C3FA5F6C68764 /* Location.m */; };
@@ -30,10 +32,12 @@
 /* Begin PBXFileReference section */
 		43AA3829A67C5DB5C8146491 /* Pods-Cloudy.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Cloudy.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Cloudy/Pods-Cloudy.debug.xcconfig"; sourceTree = "<group>"; };
 		7BE9B053F049377DFA81ABA0 /* LocationLocalDataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LocationLocalDataSource.m; sourceTree = "<group>"; };
-		7BE9B0F63D90DB76534C601B /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		7BE9B0F63D90DB76534C601B /* MainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
 		7BE9B17DC50FE1F6942DAB77 /* Location.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Location.h; sourceTree = "<group>"; };
+		7BE9B1B8296BCCC7289FAD81 /* LocationTableCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LocationTableCell.m; sourceTree = "<group>"; };
 		7BE9B2AC876E249AB39BC58C /* WeatherEntity.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WeatherEntity.m; sourceTree = "<group>"; };
 		7BE9B2CA95989FA6BDBB4E82 /* WeatherRepository.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WeatherRepository.m; sourceTree = "<group>"; };
+		7BE9B43D9408B5CC0420368A /* LocationTableCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LocationTableCell.h; sourceTree = "<group>"; };
 		7BE9B4758E9B25248273DF6C /* HTTPResponse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HTTPResponse.m; sourceTree = "<group>"; };
 		7BE9B47E722A6F61B887E32C /* HTTPResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HTTPResponse.h; sourceTree = "<group>"; };
 		7BE9B4A179D79BE796EAA722 /* ImageHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImageHelper.h; sourceTree = "<group>"; };
@@ -42,10 +46,12 @@
 		7BE9B7D0D2B4B4ECB14DB24B /* WeatherRemoteDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WeatherRemoteDataSource.h; sourceTree = "<group>"; };
 		7BE9B7E8FC9C1AD1E94E4C05 /* WeatherDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WeatherDataSource.h; sourceTree = "<group>"; };
 		7BE9B9091654BE650221E639 /* WeatherEntity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WeatherEntity.h; sourceTree = "<group>"; };
+		7BE9B97A1CE896389E340E5A /* LocationsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LocationsViewController.m; sourceTree = "<group>"; };
 		7BE9BB85529E47D3D90E4C59 /* WeatherRepository.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WeatherRepository.h; sourceTree = "<group>"; };
-		7BE9BBACAA76C8CE6AB5F846 /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		7BE9BBACAA76C8CE6AB5F846 /* MainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
 		7BE9BBB65468A6A4FCBB86B6 /* LocationDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LocationDataSource.h; sourceTree = "<group>"; };
 		7BE9BBD8C42711E2621977D1 /* WeatherRemoteDataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WeatherRemoteDataSource.m; sourceTree = "<group>"; };
+		7BE9BC5F4F982C94EF72EDE8 /* LocationsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LocationsViewController.h; sourceTree = "<group>"; };
 		7BE9BE63F17812FB0F9F08ED /* WeatherLocalDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WeatherLocalDataSource.h; sourceTree = "<group>"; };
 		7BE9BE8F3EA3A7838BF2C41B /* WeatherLocalDataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WeatherLocalDataSource.m; sourceTree = "<group>"; };
 		7BE9BE90548E45EE5528480A /* ImageHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ImageHelper.m; sourceTree = "<group>"; };
@@ -100,6 +106,17 @@
 			path = data;
 			sourceTree = "<group>";
 		};
+		7BE9B613F18088D171391368 /* locations */ = {
+			isa = PBXGroup;
+			children = (
+				7BE9BC5F4F982C94EF72EDE8 /* LocationsViewController.h */,
+				7BE9B97A1CE896389E340E5A /* LocationsViewController.m */,
+				7BE9B43D9408B5CC0420368A /* LocationTableCell.h */,
+				7BE9B1B8296BCCC7289FAD81 /* LocationTableCell.m */,
+			);
+			path = locations;
+			sourceTree = "<group>";
+		};
 		7BE9B7CEC92B8BD569853573 /* remote */ = {
 			isa = PBXGroup;
 			children = (
@@ -117,6 +134,7 @@
 				7BE9BE90548E45EE5528480A /* ImageHelper.m */,
 				7BE9B4A179D79BE796EAA722 /* ImageHelper.h */,
 				7BE9B9ABF1B711CEC4B7345A /* main */,
+				7BE9B613F18088D171391368 /* locations */,
 			);
 			path = presentation;
 			sourceTree = "<group>";
@@ -124,8 +142,8 @@
 		7BE9B9ABF1B711CEC4B7345A /* main */ = {
 			isa = PBXGroup;
 			children = (
-				7BE9B0F63D90DB76534C601B /* ViewController.h */,
-				7BE9BBACAA76C8CE6AB5F846 /* ViewController.m */,
+				7BE9B0F63D90DB76534C601B /* MainViewController.h */,
+				7BE9BBACAA76C8CE6AB5F846 /* MainViewController.m */,
 			);
 			path = main;
 			sourceTree = "<group>";
@@ -325,7 +343,9 @@
 				7BE9BC6821AE03E45A0F6024 /* LocationLocalDataSource.m in Sources */,
 				7BE9BFD7CED3B5F5A24E4690 /* HTTPResponse.m in Sources */,
 				7BE9B45FC06DD72527B13E26 /* ImageHelper.m in Sources */,
-				7BE9B5D64B4972DFD7B52A19 /* ViewController.m in Sources */,
+				7BE9B5D64B4972DFD7B52A19 /* MainViewController.m in Sources */,
+				7BE9B706C2D3209F70A85B8F /* LocationsViewController.m in Sources */,
+				7BE9B1F36CEE310C7775E4B1 /* LocationTableCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
