@@ -36,7 +36,12 @@
 }
 
 - (BOOL)deleteLocation:(Location *)location {
-    return [_location deleteLocation:location];
+    @try {
+        return [_location deleteLocation:location];
+    } @catch (NSException *exception){
+        NSLog(@"%@", exception.reason);
+        return NO;
+    }
 }
 
 - (BOOL)deleteForLatitude:(double)latitude longitude:(double)longitude {

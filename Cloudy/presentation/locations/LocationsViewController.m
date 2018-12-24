@@ -44,7 +44,20 @@
     return cell;
 }
 
+- (BOOL)tableView:(UITableView *)tableView canEditRowAtIndexPath:(NSIndexPath *)indexPath {
+    return YES;
+}
 
+
+- (void)tableView:(UITableView *)tableView
+commitEditingStyle:(UITableViewCellEditingStyle)editingStyle
+        forRowAtIndexPath:(NSIndexPath *)indexPath {
+    if (editingStyle == UITableViewCellEditingStyleDelete){
+        NSLog(@"deleted");
+        [_repository deleteLocation:_dataSet[(NSUInteger) indexPath.row]];
+        [self requery];
+    }
+}
 
 
 #pragma mark - Navigation
