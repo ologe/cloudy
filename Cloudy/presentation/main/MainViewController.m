@@ -23,7 +23,7 @@
         }
     }
 
-    
+    // left drawer setup
     [self.drawer addTarget:self.revealViewController
                      action:@selector(revealToggle:)
            forControlEvents:(UIControlEventTouchUpInside)];
