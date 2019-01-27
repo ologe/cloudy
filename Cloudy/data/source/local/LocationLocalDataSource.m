@@ -28,7 +28,7 @@
     LocationEntity *entity = [[LocationEntity alloc] init];
     entity.name = location.name;
     entity.latitude = location.latitude;
-    entity.longitude = location.latitude;
+    entity.longitude = location.longitude;
     return entity;
 }
 
